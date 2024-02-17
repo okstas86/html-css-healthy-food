@@ -46,7 +46,7 @@ Medium: 11px
 }
 
 body {
-	font-family: sans-serif;
+	font-family: "Inter", sans-serif;
 	line-height: 1;
 	font-weight: 400;
 	color: #555;
@@ -54,19 +54,65 @@ body {
 html {
 	font-size: 62.5%;
 }
-.test {
-	/* max-width: 1000px; */
-	background-color: blueviolet;
-	padding: 4rem;
-	max-width: 50rem;
-	color: #fff;
-	font-size: 2rem;
+
+.section-hero {
+	background-color: #fdf2e9;
+	padding: 9.6rem 0;
 }
+
 .hero {
-	max-width: 130rem;
+	max-width: 122rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin: 0 auto;
+	align-items: center;
+	gap: 9.6rem;
+}
+.heading-primary {
+	font-size: 5.2rem;
+	font-weight: 700;
+	line-height: 1.05;
+	color: #333;
+	letter-spacing: -0.5px;
+	margin-bottom: 3.2rem;
+}
+.hero-description {
+	font-size: 2rem;
+	line-height: 1.6;
+	margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+	font-size: 2rem;
+	padding: 1.6rem 3.2rem;
+	border-radius: 1rem;
+	text-decoration: none;
+	transition: background-color 0.5s;
+}
+.btn--full:link,
+.btn--full:visited {
+	background-color: #e67e22;
+	color: #fff;
+}
+.btn--full:hover,
+.btn--full:active {
+	background-color: #cf711f;
+	color: #fff;
+}
+.mr-right-sm {
+	margin-right: 1.6rem;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+	background-color: #fff;
+	color: #555;
+}
+.btn--outline:hover,
+.btn--outline:active {
+	background-color: #fdf2e9;
+	box-shadow: inset 0 0 0 3px #fff;
 }
 
 .hero-img {
