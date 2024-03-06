@@ -44,7 +44,10 @@ Medium: 11px
 	padding: 0;
 	box-sizing: border-box;
 }
-
+*:focus {
+	outline: none;
+	box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 body {
 	font-family: "Rubik", sans-serif;
 	line-height: 1;
@@ -94,7 +97,7 @@ strong {
 	margin-bottom: 1.6rem;
 	letter-spacing: 0.75;
 }
-
+.btn,
 .btn:link,
 .btn:visited {
 	font-size: 2rem;
@@ -103,6 +106,10 @@ strong {
 	border-radius: 1rem;
 	text-decoration: none;
 	transition: all 0.5s;
+
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
 }
 .btn--full:link,
 .btn--full:visited {
@@ -124,6 +131,17 @@ strong {
 .btn--outline:active {
 	background-color: #fdf2e9;
 	box-shadow: inset 0 0 0 3px #fff;
+}
+.btn--form {
+	background-color: #45260a;
+	color: #fdf2e9;
+	align-self: end;
+	padding: 1.2rem;
+}
+.btn--form:hover,
+.btn--form:active {
+	background-color: #fff;
+	color: #555;
 }
 .link:link,
 .link:visited {
